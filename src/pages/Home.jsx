@@ -18,10 +18,17 @@ const Home = () => {
     if (token) {
       navigate("/dashboard");
     }
-    const script = document.createElement("script");
-    (script.async = true),
-      (script.src = "//code.jivosite.com/widget/kcPDlcDu6W");
-    document.body.append(script);
+    var Tawk_API: any = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1: any = document.createElement("script"),
+        s0: any = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/64b7153d94cf5d49dc64715f/1h5lilul6";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   }, []);
 
   return (
@@ -38,3 +45,4 @@ const Home = () => {
 };
 
 export default Home;
+
